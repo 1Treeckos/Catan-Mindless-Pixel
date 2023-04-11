@@ -10,8 +10,8 @@ public class HexSpawner : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Return)) //ACCEPT AND PRINT ARRAY
         {
-            HexUISpawnerPreFab = GameObject.Find("HexUISpawner");
-            SpawnDuplicate(HexUISpawnerPreFab.GetComponent<HexUISpawner>().Retrieve(), HexUISpawnerPreFab.GetComponent<HexUISpawner>().rows, HexUISpawnerPreFab.GetComponent<HexUISpawner>().columns);
+            HexUISpawner HexUISpawnerPreFab = GameObject.Find("HexUISpawner")GetComponent<HexUISpawner>();
+            SpawnDuplicate(HexUISpawnerPreFab.Retrieve(), HexUISpawnerPreFab.rows, HexUISpawnerPreFab.columns);
         }
         
     }
